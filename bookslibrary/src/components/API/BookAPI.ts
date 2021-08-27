@@ -18,6 +18,10 @@ class BookAPI {
         return await BookAPI.axiosInstance.post<ResponseType, DataType>(url, data)
     }
     
+    static async patch<ResponseType, DataType>(url: string, data?: DataType) {
+        return await BookAPI.axiosInstance.patch<DataType, AxiosResponse<ResponseType>>(url, data);
+      }
+
     static async delete<ResponseType, DataType = undefined>(url: string) {
         return await BookAPI.axiosInstance.delete<DataType, AxiosResponse<ResponseType>>(url)
     }    

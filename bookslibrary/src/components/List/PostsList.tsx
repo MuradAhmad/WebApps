@@ -28,8 +28,7 @@ const PostsList: FC = () => {
 
     }, [])
 
-    const onDelete = async (event: React.MouseEvent<HTMLButtonElement>, bookId: number) => {
-        event.stopPropagation();
+    const onDelete = async ( bookId: number ) => {
         const listAfterDelete = await deletePost(bookId)
         setBooks(listAfterDelete)
     }
@@ -47,8 +46,7 @@ const PostsList: FC = () => {
                 </TableRow>
             </TableHead>
             <TableBody>
-                {books && books.map((book) => {
-                    return (
+                {books && books.map((book) => (
                     <TableRow key={book.id}>
                         <TableCell>
                             {book.id}
@@ -63,12 +61,12 @@ const PostsList: FC = () => {
                             {book.description}
                         </TableCell>
                         <TableCell>
-                            <IconButton onClick={(event) => onDelete(event, book.id)} aria-label='delete' disabled color='primary'>
+                            <IconButton onClick={() => onDelete(book.id)} aria-label='delete' color='primary'>
                                 <Delete/> 
-                            </IconButton> 
+                            </IconButton>  
                         </TableCell>
                     </TableRow>
-                )} )}
+                 ) )}
             </TableBody>
         </Table>
         </>
