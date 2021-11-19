@@ -129,3 +129,11 @@ export const SocialIconLink = styled.a`
 
 `
 
+export const Description = styled.p`
+    color: #fff;
+    
+    font-size: 14px;
+    padding: 5px;
+    
+
+`

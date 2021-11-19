@@ -3,7 +3,7 @@ import {animateScroll as scroll} from 'react-scroll';
 import {FaLinkedin, FaGithub} from 'react-icons/fa';
 import {FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems,
         FooterLinkTitle, FooterLink, SocialMedia, SocialIconLink, SocialIcons, SocialLogo, SocialMediaWrap,
-        WebsiteRights
+        WebsiteRights, Description
       } from './FooterElements';
 
 
@@ -18,24 +18,25 @@ const Footer = () => {
                 <FooterLinksContainer>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
-                            <FooterLinkTitle>About Us </FooterLinkTitle>
+                            <FooterLinkTitle>About</FooterLinkTitle>
                                 <FooterLink to="/signin">How it works</FooterLink>
                                 <FooterLink to="/signin">Testimonials</FooterLink>
                                 <FooterLink to="/signin">Policy</FooterLink>
                                 <FooterLink to="/signin">Terms of Services</FooterLink>  
                         </FooterLinkItems>
                         <FooterLinkItems>
-                            <FooterLinkTitle>Contact </FooterLinkTitle>
-                                <FooterLink to="/signin">Contact</FooterLink>
+                            <FooterLinkTitle></FooterLinkTitle>
                                 <FooterLink to="/signin">Support</FooterLink>
-                                <FooterLink to="/signin">Destination</FooterLink>
                                 <FooterLink to="/signin">Sponsorships</FooterLink>  
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
-                            <FooterLinkTitle>Address </FooterLinkTitle>
-                            <FooterLink to="/signin">90570, Oulu, Finland.</FooterLink> 
+                            <FooterLinkTitle></FooterLinkTitle>
+                            <Description>Contact: </Description>
+                            <Description>murad.ahmad@student.oulu.fi</Description>
+                            <Description>0453319542</Description>
+                            <Description>90570, Oulu, Finland.</Description> 
                                  
                         </FooterLinkItems>
                         
@@ -46,15 +47,15 @@ const Footer = () => {
                         <SocialLogo to='/' onClick={toggleHome}>
                             Murad
                         </SocialLogo>
-                        <WebsiteRights>Murad @c {new Date().getFullYear()}
+                        <WebsiteRights>Murad &#169; {new Date().getFullYear()}. 
                         All rights reserved.
                         </WebsiteRights>
                         <SocialIcons>
-                            <SocialIconLink href="/" target="_blank"
+                            <SocialIconLink href="https://www.linkedin.com/in/murad-ahmad-04341b49/" target="_blank"
                             aria-label="Linkedin">
                                 <FaLinkedin />
                             </SocialIconLink>
-                            <SocialIconLink href="/" target="_blank"
+                            <SocialIconLink href="https://github.com/MuradAhmad" target="_blank"
                             aria-label="Github">
                                 <FaGithub />
                             </SocialIconLink>

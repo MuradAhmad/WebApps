@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 
 export const ContactContainer = styled.div`
     color: #fff;
-    background: #010101;
+    
+    background: #010606;
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
@@ -12,6 +13,7 @@ export const ContactContainer = styled.div`
 `
 
 export const FormWrap = styled.div`
+    background: #010606;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -40,6 +42,7 @@ export const Icon = styled(Link)`
 `
 
 export const FormContent = styled.div`
+    background: #010606;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -77,6 +80,14 @@ export const FormLabel = styled.label`
 export const FormInput = styled.input`
     padding: 16px 16px;
     margin-bottom: 32px;
+    border: none;
+    border-radius: 4px;
+
+`
+export const FormTextInput = styled.textarea`
+    padding: 16px 16px;
+    margin-bottom: 32px;
+    height: 150px;
     border: none;
     border-radius: 4px;
 

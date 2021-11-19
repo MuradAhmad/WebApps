@@ -1,30 +1,38 @@
 import React from 'react';
-import Icon1 from '../images/svg-4.svg';
-import Icon2 from '../images/svg-2.svg';
-import Icon3 from '../images/svg-9.svg';
-
-import { ServicesContainer, ServicesH1, ServicesH2, ServicesWrapper, ServicesCard, ServicesIcon,
-        ServicesP } from './ServicesElements'; 
+import AndroidIcon from '../../images/AndroidIcon.svg';
+import {FaReact, FaAndroid, FaJava , FaJira, FaGit, FaConfluence } from 'react-icons/fa';
+import {SiKotlin,SiTypescript, SiIos, SiCplusplus, SiJavascript,SiAdobephotoshop, SiAdobexd, SiMysql} from 'react-icons/si';
+import { ServicesContainer, ServicesH1, ServicesH2, ServicesWrapper, ServicesCard, TopLine,
+         ServicesIcon, ServicesP, SocialIcons, ServicesContent, Description
+         } from './ServicesElements'; 
 
 const Services = () => {
     return (
-        <ServicesContainer id='projects'>
-            <ServicesH1>Projects</ServicesH1>
+        <ServicesContainer id='services'>
+            <TopLine>Services</TopLine>
+            <br></br>
             <ServicesWrapper>
                 <ServicesCard>
-                    <ServicesIcon src={Icon1}/>
-                    <ServicesH2>Mobile Applications</ServicesH2>
-                    <ServicesP>this text will be replaced with project description.</ServicesP>
+                    <SocialIcons>
+                        <FaReact />
+                        < FaAndroid/>
+                        <SiIos />
+                    </SocialIcons>
                 </ServicesCard>
                 <ServicesCard>
-                    <ServicesIcon src={Icon2}/>
-                    <ServicesH2>Code review</ServicesH2>
-                    <ServicesP>this text will be replaced with project description.</ServicesP>
+                    <SocialIcons>
+                        <FaJava />
+                        <SiKotlin />
+                        <SiTypescript />
+                        <SiCplusplus />
+                    </SocialIcons>
                 </ServicesCard>
                 <ServicesCard>
-                    <ServicesIcon src={Icon3}/>
-                    <ServicesH2>Resume</ServicesH2>
-                    <ServicesP>this text will be replaced with project description.</ServicesP>
+                    <SocialIcons>
+                        <SiMysql />
+                        <SiAdobephotoshop />
+                        <SiAdobexd />
+                    </SocialIcons>
                 </ServicesCard>
             </ServicesWrapper>
         </ServicesContainer>

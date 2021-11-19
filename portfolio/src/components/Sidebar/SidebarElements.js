@@ -5,11 +5,11 @@ import styled from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
 
 export const SidebarContainer = styled.aside`
+    background: #A3A000;
     position: fixed;
     z-index: 999;
     width: 100%;
     height: 100%;
-    background: #0d0d0d;
     display: grid;
     align-items: center;
     top: 0;
@@ -17,7 +17,6 @@ export const SidebarContainer = styled.aside`
     transition: 0.3s ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
     top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};  
-    
 
 `
 
@@ -32,7 +31,7 @@ export const Icon = styled.div`
     background: transparent;
     font-size: 2rem;
     cursor: pointer;
-    outline:none; 
+    outline: none; 
 
 `
 
@@ -63,20 +62,20 @@ export const SidebarLink = styled(LinkS)`
     transition: 0.2s ease-in-out;
     cursor: pointer;
 
-    &.hover {
-        color: #01bf71
-        transition: 0.2s ease-in-out;
-    }
+    &:hover {
+        color: #01bf71;
+        transition: 0.2s ease-in-out;  
+     }
 `
 export const sideBtnWrap = styled.div`
     display: flex;
-    justify-content: centerr;
+    justify-content: center;
 
 `
 
 export const SidebarRoute = styled(LinkR)`
     border-radius: 50px;
-    background:#01bf71;
+    background: #01bf71;
     white-space: nowrap;
     padding: 16px 64px;
     color: #010606;
@@ -87,11 +86,10 @@ export const SidebarRoute = styled(LinkR)`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
 
-    &.hover {
+    &:hover {
         transition: all 0.2s ease-in-out;
         background: #fff;
         color: #010606;
-
     }
 
 `

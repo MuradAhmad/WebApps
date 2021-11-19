@@ -1,39 +1,39 @@
 import styled from 'styled-components';
+import  {Link as LinkR}  from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
 
 export const ProjectsContainer = styled.div`
-    height: 500px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #010606;
 
-    @media screen and (max-width: 768px) {
-        height: 1100px;
-    }
-
-    @media screen and (max-width: 480px) {
-        height: 1300px;
-    }
 
 `
 
 export const ProjectsWrapper = styled.div`
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 16px;
-    padding: 0 50px;
+    padding: 10px 50px;
+    margin-bottom: 50px;
     
     @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr 1fr;
+        padding: 0 20px;    
     }
-
     @media screen and (max-width: 768px) {
         grid-template-columns: 1fr;
         padding: 0 20px;
+    }
+    @media screen and (max-width: 480px) {
+        
+        padding: 20px;
     }
 
 `
@@ -96,5 +96,30 @@ export const TopLine = styled.p`
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 50px;
+
+`
+export const Btn = styled.div`
+    display: flex;
+    align-items: center;
+
+`
+
+export const BtnLink = styled(LinkR)`
+    border-radius: 50px;
+    white-space: nowrap;
+    padding: 20px;
+    color: #A3A000;
+    font-size: 16px;
+    outline: none;
+    
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        brackground: #fff;
+        color: #01bf71; 
+    }
 
 `
