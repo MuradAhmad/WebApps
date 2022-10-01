@@ -3,6 +3,7 @@ import { Button } from 'react-scroll';
 import Icon from '../../images/profile.svg';
 import profilePicture from '../../images/murad.JPG';
 import Data from '../InfoSection' ;
+
 /*import { Button } from 'react-scroll'*/
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading,
     Subtitle, BtnWrap, ImgWrap, Img, CardWrapper, ImageCard, InfoCard } from './infoElements' ;

@@ -34,8 +34,8 @@ const Footer = () => {
                         <FooterLinkItems>
                             <FooterLinkTitle></FooterLinkTitle>
                             <Description>Contact: </Description>
-                            <Description>murad.ahmad@student.oulu.fi</Description>
-                            <Description>0453319542</Description>
+                            <Description>hireit19@gmail.com</Description>
+                            <Description>+358453319542</Description>
                             <Description>90570, Oulu, Finland.</Description> 
                                  
                         </FooterLinkItems>

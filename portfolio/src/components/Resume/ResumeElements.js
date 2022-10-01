@@ -31,6 +31,9 @@ export const HeroContainer = styled.div`
     position: relative;
     z-index: 1;
 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
     :before {
         content: '';
         position: absolute;
@@ -61,7 +64,7 @@ export const VideoBg = styled.video`
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    background: #192736;
+    background: ##192736;
     
 `
 
@@ -75,8 +78,17 @@ export const HeroContent = styled.div`
     flex-direction: column;
     align-items: center;
     z-index: 3;
-    margin-bottom: 20px;
     
+    //box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    //transition: 0.3s;  
+
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 32px;
+    }  
 
 `
 
@@ -376,8 +388,8 @@ export const List = styled.li`
 export const SocialIcons = styled.div`
     display: flex;
     
-    width: 240px;
-    justify-content: space-between;
+    width: 350px;
+    justify-content: right;
     position: absolute;
     bottom: 1.2rem;
     background: transparent;

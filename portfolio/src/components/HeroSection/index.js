@@ -16,7 +16,7 @@ function HeroSection() {
             <HeroContent>
                 <HeroH1>Murad Ahmad</HeroH1>
                 <TopLine>Software developer</TopLine>
-                <Subtitle>Android developer | Full Stack developer </Subtitle>
+                <Subtitle>Android developer @ Polar Electro Oy </Subtitle>
                 <HeroP>    </HeroP>
                 <Subtitle>Master's in Ubiquitous Computing</Subtitle>
                 <Description>University of Oulu, Finland</Description>

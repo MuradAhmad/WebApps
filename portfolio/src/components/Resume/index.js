@@ -9,7 +9,7 @@ import {FaLinkedin, FaGithub} from 'react-icons/fa';
 
 import { ResumeContainer, ResumeWrapper, ResumeIntroTitleCard,List, Icon, CloseIcon, ResumeIcon, ResumeIntro, ResumeIntroCard,
          TopLine, Heading, Heading2, Description, SkillsWrapper, SkillsCard, WorkWrapper,SocialIconLink,SocialIcons,
-          WorkCard,HeroContainer,ArticleCard, ArticleWrapper, HeroBg, VideoBg,  HeroContent, HeroH1, HeroP, Subtitle, IconButton,ExpWrapper, ExpCard, ExpCard1 } from './ResumeElements';
+          WorkCard,HeroContainer,ArticleCard, ArticleWrapper, HeroBg, VideoBg,  HeroContent, HeroH1, HeroP, Subtitle, IconButton,ExpWrapper, ExpCard, ExpCard1, CardBox } from './ResumeElements';
 
 
 const Resume = (props) => {
@@ -27,9 +27,13 @@ const Resume = (props) => {
                     </Icon>
                     <HeroH1>Murad Ahmad</HeroH1>
                     <TopLine>Software developer</TopLine>
+                    <TopLine>@ Polar Electro Oy</TopLine>
+                    <Description>Finland.</Description>
                     <HeroP>    </HeroP>
                     <Subtitle>Master's in Ubiquitous Computing</Subtitle>
                     <Description>University of Oulu, Finland</Description>
+                    <HeroP>    </HeroP>
+                    <HeroP>    </HeroP>
                     <SocialIcons>
                             <SocialIconLink href="https://www.linkedin.com/in/murad-ahmad-04341b49/" target="_blank"
                             aria-label="Linkedin">

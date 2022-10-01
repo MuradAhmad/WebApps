@@ -11,7 +11,7 @@ export const homeObjOne = {
     lightTextDesc: true,
     topLine: 'About Me',
     headline: 'Programming and Designing',
-    description: 'I am an open minded, knowledge seeking and fast learning developer. I have a good understanding of agile methodologies which I developed during working on projects of all scales. Research assistant in university of Oulu, Software developer trainee at Elisa as well as working on small personal projects. Skilled at writing well-designed, testable and efficient code as well as documentation and applying current best practices. ',
+    description: 'I am an open minded, knowledge seeking and fast learning developer. I follow SaFe agile methodologies for the development of my projects. Improving my skills on writing well-designed, testable and efficient code, documentation and applying current best practices. ',
     interests: 'SPORTS:',
     sports: 'Volleybal, Badmenton, Cricket, Hiking, Driving. ',
     buttonLabel: 'more..',
